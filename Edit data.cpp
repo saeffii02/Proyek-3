@@ -81,6 +81,21 @@ void add(){
 	cout<<"Tambahkan Data"<<endl;
 }
 
+void edit(){
+	int y;
+	do{
+		display();
+		cout << "Edit Data ke : ";
+		cin>>y;
+		cin.ignore();	
+		cout<<"Edit data : ";
+		getline(cin, n[y-1]);
+		cout<<"Edit menjadi : ";
+		display();	
+		cout << "ubah lagi (y/t) : ";
+		cin >> loop;
+	} while (loop == "y");
+}
 
 int main(){
 	int pil;
@@ -103,6 +118,7 @@ int main(){
 		}while(loop !="y");
 			break;
 		case 3:
+			edit();
 			break;
 		case 4:
 			break;
