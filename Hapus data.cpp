@@ -97,6 +97,28 @@ void edit(){
 	} while (loop == "y");
 }
 
+void del(){
+	int x;
+	do{
+		display();
+		if(pos>0){
+			cout<<"hapus data ke : ";
+			cin>>x;
+			for(int i=x; i<pos; i++){
+				n[i-1]=n[1];
+			}
+			pos--;
+			display();
+			cout<<"hapus lagi(y/t) : ";
+			cin>>loop;
+		}else {
+			cout<<"isi t : ";
+			cin>>loop;
+		}
+		
+	}while(loop=="y");
+}
+
 int main(){
 	int pil;
 	do{
@@ -121,6 +143,7 @@ int main(){
 			edit();
 			break;
 		case 4:
+			del();
 			break;
 		case 5:
 			cout<<"....."<<endl;
