@@ -98,7 +98,7 @@ int main(){
 			break;
 		case 2:
 			do{
-			cout<<"kembali (y) : ";
+			cout<<"Kembali (y) : ";
 			cin>>loop;
 		}while(loop !="y");
 			break;
@@ -110,7 +110,7 @@ int main(){
 			cout<<"....."<<endl;
 			break;
 		default:
-			cout<<"pilih 1-4"<<endl;
+			cout<<"Pilih 1-4"<<endl;
 			break;
 		}
 	}while(pil !=5);
